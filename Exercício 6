@@ -1,0 +1,35 @@
+    import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		int n1 = 0;
+		
+		int n2 = 0;
+		
+		int n3 = 0;
+		
+		int n4 = 0;
+		
+		System.out.println("Qual a medida do lado do telângulo? ");
+		n1 = sc.nextInt();
+		
+		System.out.println("Qual a medida da altura do retângulo? ");
+		n2 = sc.nextInt();
+		
+		System.out.println("Qual a medida do lado do quadrado? ");
+		n3 = sc.nextInt();
+		
+		System.out.println("Qual a medida do raio do círculo? ");
+		n4 = sc.nextInt();
+		
+		System.out.println("O retângulo tem a área de: " + (n1*n2));
+		
+		System.out.println("O quadrado tem a área de: " + (n3*n3));
+		
+		System.out.println("O círculo tem a área de: " + (n4*n4*3));
+	}
+}
