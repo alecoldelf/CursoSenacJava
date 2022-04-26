@@ -1,0 +1,26 @@
+    import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		int n1 = 0;
+		
+		int n2 = 0;
+		
+		int n3 = 0;
+		
+		System.out.println("Quantos anos você tem? ");
+		n1 = sc.nextInt();
+		
+		System.out.println("Quantos meses você tem? ");
+		n2 = sc.nextInt();
+		
+		System.out.println("Quantos dias você tem? ");
+		n3 = sc.nextInt();
+		
+		System.out.println("Você tem no total: " + ((n1*365) + (n2*30) + n3) + " dias de vida");
+	}
+}
