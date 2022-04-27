@@ -1,0 +1,32 @@
+    import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float n1 = 0;
+		
+		float n2 = 0;
+		
+		float n3 = 0;
+		
+		float n4 = 0;
+		
+		System.out.println("Quantos carros ele(a) vendeu? ");
+		n1 = sc.nextInt();
+		
+		System.out.println("Qual o seu salário fixo? ");
+		n2 = sc.nextInt();
+		
+		System.out.println("Qual o valor total de suas vendas? ");
+		n3 = sc.nextInt();
+		
+		System.out.println("Quanto ele(a) recebe por carro vendido? ");
+		n4 = sc.nextInt();
+		
+		System.out.println("O total do seu salário será de: " + ((n1*n4)+n2+(5/100*n3)));
+	}
+}
