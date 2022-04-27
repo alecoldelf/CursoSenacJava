@@ -1,0 +1,17 @@
+    import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float n1 = 0;
+		
+		System.out.println("Qual o valor de fábrica do carro? ");
+		n1 = sc.nextInt();
+		
+		System.out.println("O custo total do carro ao consumidor será de: " + (n1+(28/100*n1)+(45/100*n1)));
+	}
+}
