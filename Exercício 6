@@ -14,6 +14,10 @@ public class Main
 		
 		int n4 = 0;
 		
+		int n5 = 0;
+		
+		int n6 = 0;
+		
 		System.out.println("Qual a medida do lado do telângulo? ");
 		n1 = sc.nextInt();
 		
@@ -26,10 +30,18 @@ public class Main
 		System.out.println("Qual a medida do raio do círculo? ");
 		n4 = sc.nextInt();
 		
+		System.out.println("Qual a medida da altura do triângulo? ");
+		n5 = sc.nextInt();
+		
+		System.out.println("Qual a medida da largura do triângulo? ");
+		n6 = sc.nextInt();
+		
 		System.out.println("O retângulo tem a área de: " + (n1*n2));
 		
 		System.out.println("O quadrado tem a área de: " + (n3*n3));
 		
 		System.out.println("O círculo tem a área de: " + (n4*n4*3));
+		
+		System.out.println("O triângulo tem a área de: " + (n5*n6));
 	}
 }
