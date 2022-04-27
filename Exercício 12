@@ -1,0 +1,19 @@
+    import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float celcius = 0;
+		
+		System.out.println("Quantos graus está fazendo? (em celcius) ");
+		celcius = sc.nextInt();
+		
+		float total = 9*celcius;
+		
+		System.out.println("Estão fazendo " + (-total + 160) + " Farenheit");
+	}
+}
