@@ -1,0 +1,34 @@
+    import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float n1 = 0;
+		
+		float n2 = 0;
+		
+		float n3 = 0;
+		
+		System.out.println("Qual foi sua media no primeiro trimestre? ");
+		n1 = sc.nextInt();
+		
+		System.out.println("Qual foi sua media no segundo trimestre? ");
+		n2 = sc.nextInt();
+		
+		System.out.println("Qual foi sua media no terceiro trimestre? ");
+		n3 = sc.nextInt();
+		
+		
+		float media1 = n1*2;
+		
+		float media2 = n2*3;
+		
+		float media3 = n3*5;
+		
+		System.out.println("Sua media no terceiro trimestre foi de: " + ((media1+media2+media3)/10));
+	}
+}
