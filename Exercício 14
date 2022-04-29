@@ -1,0 +1,24 @@
+package cap8e9;
+
+import java.util.*;
+
+public class Ex14{
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float x = 0;
+		
+		System.out.println("Escolha um número qualquer: ");
+		x = sc.nextInt();
+		
+		if (x>10) {
+		    System.out.print("Seu número é maior que 10!");
+		}
+		
+		else {
+		    System.out.println("Seu número é menor que 10!");
+		}
+	}
+}
