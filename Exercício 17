@@ -1,0 +1,34 @@
+package cap8e9;
+
+import java.util.*;
+
+public class Ex17{
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float x = 0;
+		
+		float y = 0;
+		
+		System.out.println("Quanto você tirou na primeira prova?");
+		x = sc.nextInt();
+		
+		
+		System.out.println("Quanto você tirou na segunda prova?");
+		y = sc.nextInt();
+		
+		float z = x+y;
+		
+		System.out.println("Sua media este bimestre foi: " + (z/2));
+		
+		if (z>=6) {
+		    System.out.println("Você está na média!");
+		}
+		
+		else {
+		    System.out.println("Você está abaixo da média!");
+		}
+	}
+}
