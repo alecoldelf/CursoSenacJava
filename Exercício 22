@@ -1,0 +1,29 @@
+package cap8e9;
+
+import java.util.*;
+
+public class Ex21{
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float x = 0;
+		
+		float y = 0;	
+		
+		System.out.println("Qual seu salário mensal?");
+		x = sc.nextInt();
+		
+		System.out.println("Quantas horas você trabalhou este mês?");
+		y = sc.nextInt();
+		
+		if (y>40) {
+			System.out.println("Você deve ter um acrécimo de: " + (x/2) + " totalizando um salário de: " + (x/2+x));
+		}
+		
+		else {
+		    System.out.println("Você não vai ganhar hora extra este mês");
+		}
+	}
+}
