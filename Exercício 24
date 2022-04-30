@@ -1,0 +1,29 @@
+package cap8e9;
+
+import java.util.*;
+
+public class Ex23{
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float x = 0;
+		
+		float y = 0;	
+		
+		System.out.println("Qual o seu salário mensal?");
+		x = sc.nextInt();
+		
+		System.out.println("Qual o valor de todas as vendas efetuadas?");
+		y = sc.nextInt();
+		
+		if (y<=1500) {
+			System.out.println("Este mês você vai receber: " + ((3/100*y)+y+x));
+		}
+		
+		else {
+		    System.out.println("Este mês você vai receber: " + ((5/100*y)+y+x));
+		}
+	}
+}
