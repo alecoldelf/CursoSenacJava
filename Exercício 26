@@ -1,0 +1,38 @@
+package cap8e9;
+
+import java.util.*;
+
+public class Ex26{
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float x = 0;
+		
+		float y = 0;
+		
+		float z = 0;
+		
+		System.out.println("Qual a quantidade atual em estoque? ");
+		x = sc.nextInt();
+		
+		System.out.println("Qual a quantidade mínima do estoque? ");
+		y = sc.nextInt();
+		
+		System.out.println("Qual a quantidade máxima do estoque? ");
+		z = sc.nextInt();
+		
+		float w = ((z+y)/2);
+		
+		System.out.println("A quantidade média em estoque é de: " + w);
+		
+		if (x>=w) {
+			System.out.println("Não efetuar compra ");
+		}
+		
+		else {
+			System.out.println("Efetuar compra");
+		}
+	}
+}
