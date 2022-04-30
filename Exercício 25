@@ -1,0 +1,43 @@
+package cap8e9;
+
+import java.util.*;
+
+public class Ex25{
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float x = 0;
+		
+		float y = 0;
+		
+		float w = 0;
+		
+		float z = 0;
+		
+		System.out.println("Digite o número da sua conta: ");
+		x = sc.nextInt();
+		
+		System.out.println("Digite seu saldo anterior: ");
+		y = sc.nextInt();
+		
+		System.out.println("Digite o total de débitos na sua conta neste mês: ");
+		w = sc.nextInt();
+		
+		System.out.println("Digite o total de créditos na sua conta neste mês: ");
+		w = sc.nextInt();
+		
+		float total = ((y-w)+z);
+		
+		System.out.println("Seu saldo atual é de: " + total);
+		
+		if (total>=0) {
+			System.out.println("Este mês seu saldo está positivo ");
+		}
+		
+		else {
+			System.out.println("Este mês seu saldo está negativo ");
+		}
+	}
+}
