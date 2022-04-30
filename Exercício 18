@@ -1,0 +1,24 @@
+package cap8e9;
+
+import java.util.*;
+
+public class Ex18{
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float x = 0;
+		
+		System.out.println("Quantos anos você tem?");
+		x = sc.nextInt();
+		
+		if (x>=16) {
+		    System.out.println("Você já pode votar este ano!");
+		}
+		
+		else {
+		    System.out.println("Você aida não pode votar neste ano!");
+		}
+	}
+}
