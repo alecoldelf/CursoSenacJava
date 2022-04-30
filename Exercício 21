@@ -1,0 +1,33 @@
+package cap8e9;
+
+import java.util.*;
+
+public class Ex21{
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float horac = 0;
+		
+		float horaf = 0;	
+		
+		System.out.println("Que horas o jogo começou?");
+		horac = sc.nextInt();
+		
+		System.out.println("Que horas o jogo terminou?");
+		horaf = sc.nextInt();
+		
+		if (horac<horaf) {
+			System.out.println("O jogo durou um total de: " + (horaf-horac));
+		}
+		
+		else if (horaf<horac) {
+			System.out.println("O jogo durou um total de: " + (24-horac+horaf));
+		}
+		
+		else {
+		    System.out.println("Vocês jogaram por mais de 24 horas!");
+		}
+	}
+}
