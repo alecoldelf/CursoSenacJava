@@ -1,0 +1,42 @@
+package cap8;
+
+import java.util.*;
+
+public class Ex32 {
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner (System.in);
+	
+		String x;
+	
+		String y;
+	
+		int z = 0;
+		
+		int a = 0;
+	
+		System.out.println("Digite o nome do primeiro time: ");
+		x = sc.next();
+		
+		System.out.println("Digite o nome do segundo time: ");
+		y = sc.next();
+	
+		System.out.println("Digite o número de gols do(a)  " + x);
+		z = sc.nextInt();
+		
+		System.out.println("Digite o número de gols do(a) " + y); 
+		a = sc.nextInt();
+		
+		if (z>a) {
+			System.out.println("O time " + x + " é o vencedor!");
+		}
+	
+		else if (a>z) {
+			System.out.println("O time " + y + "é o vencedor!");
+		}
+		
+		else {
+			System.out.println("O jogo terminou empatado");
+		}
+	}
+}
