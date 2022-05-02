@@ -1,0 +1,27 @@
+package cap8;
+
+	import java.util.*;
+
+public class Ex27 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		float x = 0;
+		
+		System.out.println("Digite um número qualquer: ");
+		x = sc.nextInt();
+		
+		if (x>0){
+			System.out.println("Seu número é positivo!");
+		}
+		
+		else if (x<0) {
+			System.out.println("Seu número é negativo!");
+		}
+		
+		else {
+			System.out.println("Seu número é igual a zero!");
+		}
+	}
+}
