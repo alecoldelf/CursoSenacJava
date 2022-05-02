@@ -1,0 +1,40 @@
+package cap8;
+
+import java.util.*;
+
+public class Ex29 {
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner (System.in);
+	
+		int x = 0;
+	
+		int y = 0;
+	
+		int z = 0;
+	
+		System.out.println("Digite um número qualquer: ");
+		x = sc.nextInt();
+		
+		System.out.println("Digite outro número qualquer: ");
+		y = sc.nextInt();
+	
+		System.out.println("Digite outro número qualquer: ");
+		z = sc.nextInt();
+	
+		if (y>z && x>z) {
+			System.out.println("Os dois maiores números são: " + x + " e " + y);
+			System.out.println("A soma dos dois números é: " + (x+y));
+		}
+	
+		else if (y>x && z>x) {
+			System.out.println("Os dois maiores números são: " + y + " e " + z);
+			System.out.println("A soma dos dois números é: " + (y+z));
+		}
+	
+		else if (z>y && x>y) {
+			System.out.println("Os dois maiores números são: " + x + " e " + z);
+			System.out.println("A soma dos dois números é: " + (x+z));
+		}
+	}
+}
