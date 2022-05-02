@@ -1,0 +1,49 @@
+package cap8;
+
+import java.util.*;
+
+public class Ex30 {
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner (System.in);
+	
+		int x = 0;
+	
+		int y = 0;
+	
+		int z = 0;
+	
+		System.out.println("Digite um número qualquer: ");
+		x = sc.nextInt();
+		
+		System.out.println("Digite outro número qualquer: ");
+		y = sc.nextInt();
+	
+		System.out.println("Digite outro número qualquer: ");
+		z = sc.nextInt();
+	
+		if (x>y && y>z) {
+			System.out.println("Os números em ordem crescente são: " + x + ", " + y + " e " + z);
+		}
+	
+		else if (y>z && z>x) {
+			System.out.println("Os números em ordem crescente são: " + y + ", " + z + " e " + x);
+		}
+	
+		else if (z>x && x>y) {
+			System.out.println("Os números em ordem crescente são: " + z + ", " + x + " e " + y);
+		}
+		
+		else if (z>y && y>x) {
+			System.out.println("Os números em ordem crescente são: " + z + ", " + y + " e " + x);
+		}
+
+		else if (y>x && x>z) {
+			System.out.println("Os números em ordem crescente são: " + y + ", " + x + " e " + z);
+		}
+		
+		else if (x>z && z>y) {
+			System.out.println("Os números em ordem crescente são: " + x + ", " + z + " e 95" + y);
+		}
+	}
+}
