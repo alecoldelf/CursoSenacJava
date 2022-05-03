@@ -1,0 +1,81 @@
+package cap8;
+
+import java.util.*;
+
+public class Ex36 {
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner (System.in);
+		
+		int w = 0;
+		
+		int x = 0;
+		
+		int y = 0;
+		
+		int z = 0;
+		
+		System.out.println("Qual a idade do primeiro homem? ");
+		w = sc.nextInt();
+		
+		System.out.println("Qual a idade do segundo homem? ");
+		x = sc.nextInt();
+
+		System.out.println("Qual a idade da primeira mulher?");
+		y = sc.nextInt();
+		
+		System.out.println("Qual a idade da segunda mulher?");
+		z = sc.nextInt();	
+		
+		if (w>x && z>y) {
+			System.out.println("O homem mais velho tem " + w + " anos!");
+			System.out.println("A mulher mais velha tem " + z + " anos!");
+			System.out.println("A soma da idade dos dois é: " + (w+z));
+		}
+	
+		else if (x>w && y>z) {
+			System.out.println("O homem mais velho tem " + w + " anos!");
+			System.out.println("A mulher mais velha tem " + y + " anos!");
+			System.out.println("A soma da idade dos dois é: " + (w+y));
+		}
+		
+		else if (w>x && y>z) {
+			System.out.println("O homem mais velho tem " + x + " anos!");
+			System.out.println("A mulher mais velha tem " + y + " anos!");
+			System.out.println("A soma da idade dos dois é: " + (x+y));
+		}
+		
+		else if (x>w && z>y && w<x && z<y) {
+			System.out.println("O homem mais velho tem " + x + " anos!");
+			System.out.println("A mulher mais velha tem " + z + " anos!");
+			System.out.println("A soma da idade dos dois é: " + (x+z));
+			System.out.println("O homem mais novo tem " + w + " anos!");
+			System.out.println("A mulher mais nova tem " + z + " anos!");
+			System.out.println("A produto da idade dos dois é: " + (w*z));
+		}
+		
+		else if (w<x && z<y) {
+			System.out.println("O homem mais novo tem " + w + " anos!");
+			System.out.println("A mulher mais nova tem " + z + " anos!");
+			System.out.println("A produto da idade dos dois é: " + (w*z));
+		}
+	
+		else if (x>w && y<z) {
+			System.out.println("O homem mais novo tem " + w + " anos!");
+			System.out.println("A mulher mais novo tem " + y + " anos!");
+			System.out.println("A produto da idade dos dois é: " + (w*y));
+		}
+		
+		else if (w>x && y<z) {
+			System.out.println("O homem mais novo tem " + x + " anos!");
+			System.out.println("A mulher mais nova tem " + y + " anos!");
+			System.out.println("A soma da idade dos dois é: " + (x*y));
+		}
+		
+		else if (x>w && z<y) {
+			System.out.println("O homem mais novo tem " + x + " anos!");
+			System.out.println("A mulher mais nova tem " + z + " anos!");
+			System.out.println("A soma da idade dos dois é: " + (x*z));
+		}
+	}
+}
