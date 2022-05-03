@@ -1,0 +1,45 @@
+package cap8;
+
+import java.util.*;
+
+public class Ex35 {
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner (System.in);
+		
+		String x;
+		
+		int g = 0;
+		
+		int a = 0;
+		
+		System.out.println("Você colocou Gasolina ou Álcool?");
+		x = sc.next();
+
+		System.out.println("Digite o número de lirtos de gasolina colocados (caso tenha colocado álcool digite 0: ");
+		g = sc.nextInt();
+		
+		System.out.println("Digite o número de lirtos de álcool colocados (caso tenha colocado gasolina digite 0: ");
+		a = sc.nextInt();	
+		
+		if (g>0 && g<=20) {
+			System.out.println("Você deve pagar: " + (4*100/g) + " reais pelos " + g + " litros de gasolina");
+		}
+	
+		else if (g>20) {
+			System.out.println("Você deve pagar: " + ((6*100)/g) + " reais pelos " + g + " litros de gasolina");
+		}
+		
+		else if (a>0 && a<=20) {
+			System.out.println("Você deve pagar: " + ((3*100)/a) + " reais pelos " + a + " litros de álcool");
+		}
+		
+		else if (a>20) {
+			System.out.println("Você deve pagar: " + ((5*100)/a) + " reais pelos " + a + " litros de álcool");
+		}
+		
+		else {
+			System.out.println("Você não encheu seu tanque");
+		}
+	}
+}
