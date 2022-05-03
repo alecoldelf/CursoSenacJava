@@ -1,0 +1,56 @@
+package cap8;
+
+	import java.util.*;
+
+public class Exercício_Signos {
+		public static void main(String[	] args) {
+			
+			Scanner sc = new Scanner (System.in);
+			
+			String mês;
+			
+			System.out.println("Em qual mês você nasceu? ");
+			mês = sc.next();
+			
+		switch (mês) {
+			case "Janeiro":
+				System.out.println("Você é de Capricórnio");
+				break;
+			case "Fevereiro":
+				System.out.println("Você é de Aquário");
+				break;
+			case "Março":
+				System.out.println("Você é de Peixes");
+				break;
+			case "Abril":
+				System.out.println("Você é de Áries");
+				break;
+			case "Maio":
+				System.out.println("Você é de Touro");
+				break;
+			case "Junho":
+				System.out.println("Você é de Gêmeos");
+				break;
+			case "Julho":
+				System.out.println("Você é de Câncer");
+				break;
+			case "Agosto":
+				System.out.println("Você é de Leão");
+				break;
+			case "Setembro":
+				System.out.println("Você é de Virgem");
+				break;
+			case "Outubro":
+				System.out.println("Você é de Libra");
+				break;
+			case "Novembro":
+				System.out.println("Você é de Escorpião");
+				break;
+			case "Dezembro":
+				System.out.println("Você é de Sargitário");
+				break;
+			default:
+				System.out.println("Um erro foi encontrado");
+		}
+	}
+}
