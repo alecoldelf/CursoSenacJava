@@ -1,0 +1,56 @@
+package cap8;
+	
+	import java.util.*;
+
+public class Ex37 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+	
+		float x = 0;
+	
+		float y = 0;
+	
+		System.out.println("Quantos morangos você comprou? ");
+		x = sc.nextInt();
+		
+		System.out.println("Quantas maçãs você comprou? ");
+		y = sc.nextInt();
+		
+		float a = (float) (x*2.50);
+		
+		float b = (float) (x*2.20);
+		
+		float c = (float) (y*1.80);
+		
+		float d = (float) (y*1.50);
+		
+		if (x+y>=8 || a+c>=25) {
+			System.out.println("Você terá de pagar: " + (b+d) + " pelas frutas");
+		}
+		
+		else if (x<5 && a<25) {
+			System.out.println("Você terá de pagar: " + a + " pelos morangos");
+		}
+		
+		else if (x<5 && a>25) {
+			System.out.println("Você terá de pagar: " + (10*100/a) + " pelos morangos");
+		}
+		
+		else if (x>5) {
+			System.out.println("Você terá de pagar: " + (10*100/b) + " pelos morangos");
+		}
+		
+		else if (y<5 && c<25) {
+			System.out.println("VocÊ terá de pagar: " + c + " pelos morangos");
+		}
+		
+		else if (y<5 && c>25) {
+			System.out.println("Você terá de pagar: " + (10*100/c) + " pelos morangos");
+		}
+		
+		else if (y>5) {
+			System.out.println("Você terá de pagar: " + (10*100/d) + " pelos morangos");
+		}
+		
+	}	
+}
