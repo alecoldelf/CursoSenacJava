@@ -1,0 +1,27 @@
+package cap8;
+
+import java.util.Scanner;
+
+public class Ex38 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		float x = 0;
+		
+		float y = 0;
+		
+		System.out.println("Qual o usuário? ");
+		y = sc.nextInt();
+		
+		System.out.println("Qual a senha? ");
+		x = sc.nextFloat();
+		
+		if (y==1234 && x==9999) {
+			System.out.println("Acesso permitido");
+		}
+		
+		else {
+			System.out.println("Ocorreu um erro, revise seus dados e tente novamente");
+		}
+	}
+}
