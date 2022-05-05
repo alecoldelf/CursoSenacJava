@@ -1,0 +1,49 @@
+package cap8;
+
+import java.util.Scanner;
+
+public class Ex43 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		float a = 0;
+		
+		float b = 0;
+		
+		float c = 0;
+		
+		System.out.println("Digite um número: ");
+		a = sc.nextInt();
+		
+		System.out.println("Digite outro número: ");
+		b = sc.nextInt();
+		
+		System.out.println("Digite outro número: ");
+		c = sc.nextInt();
+		
+		if (a<b+c && b<a+c && c<a+b) {
+			if (a==b && b==c) {
+				System.out.println("Triângulo equilátero");
+			}
+			
+			else if (a==b || b==c || a==c) {
+				System.out.println("Triângulo Isósceles");
+			}
+			
+			else {
+				System.out.println("Trângulo escaleno");
+			}
+		}
+		
+		else {
+			System.out.println("Não é possível formar um triângulo");
+		}
+	}
+}
+
+Tabela:
+a=1; b=2; c=3 -> "Não é possível formar um triângulo"
+a=3; b=4; c=5 -> "Triângulo escaleno"
+a=2; b=2; c=4 -> "Não é possível formar um triângulo"
+a=4; b=4; c=4 -> "Triângulo equilátero"
+a=5; b=3; c=3 -> "Trângulo Isósceles"
