@@ -1,0 +1,49 @@
+package cap8;
+
+import java.util.Scanner;
+
+public class Ex41 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		float n1 = 0;
+		
+		float n2 = 0;
+		
+		float n3 = 0;
+		
+		float me = 0;
+		
+		System.out.println("Qual foi sua media no primeiro trimestre? ");
+		n1 = sc.nextInt();
+		
+		System.out.println("Qual foi sua media no segundo trimestre? ");
+		n2 = sc.nextInt();
+		
+		System.out.println("Qual foi sua media no terceiro trimestre? ");
+		n3 = sc.nextInt();
+		
+		System.out.println("Qual foi sua media de atividades? ");
+		me = sc.nextInt();
+		
+		float ma = (n1+n2*2+n3*3+me)/7;
+		
+		System.out.println("Sua media de aproveitamento foi de: " + ma);
+		
+		if (ma>=9){
+			System.out.println("Conceito: A");
+		}
+		
+		else if (ma>=6 && ma<7.5) {
+			System.out.println("Conceito: C");
+		}
+		
+		else if (ma>=7.5 && ma<9) {
+			System.out.println("Conceito: B");
+		}
+		
+		else {
+			System.out.println("Conceito: D");
+		}
+	}
+}
