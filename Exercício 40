@@ -1,0 +1,40 @@
+package cap8;
+
+import java.util.Scanner;
+
+public class Ex40 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		String produto;
+		
+		float qa = 0;
+		
+		float pu = 0;
+		
+		System.out.println("Qual produto você adiquiriu? ");
+		produto = sc.next();
+		
+		System.out.println("Qual a quantidade? ");
+		qa = sc.nextInt();
+		
+		System.out.println("Qual o preço de cada unidade? ");
+		pu = sc.nextInt();
+		
+		float total = (qa*pu);
+		
+		System.out.println("O valor total é de: R$" + total);
+		
+		if (qa<=5){
+			System.out.println("O valor total com desconto é de: R$" + (2/100*total));
+		}
+		
+		else if (qa>5 && qa<=10) {
+			System.out.println("O valor total com desconto é de: R$" + (3/100*total));
+		}
+		
+		else {
+			System.out.println("O valor total com desconto é de: R$" + (5/100*total));
+		}
+	}
+}
