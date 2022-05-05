@@ -1,0 +1,32 @@
+package cap8;
+
+import java.util.Scanner;
+
+public class Ex42 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		float ne = 0;
+		
+		float nas = 0;
+		
+		float ie = 0;
+		
+		System.out.println("Qual o código do(a) funcionário(a)?");
+		ne = sc.nextInt();
+		
+		System.out.println("Quantos anos o(a) funcionário(a) tem? ");
+		nas = sc.nextInt();
+		
+		System.out.println("Há quantos anos ele(a) trabalha na empresa? ");
+		ie = sc.nextInt();
+		
+		if (nas>=65 || ie>=30 || nas>=60 && ie>=25) {
+			System.out.println("Requer aposentadoria");
+		}
+		
+		else {
+			System.out.println("Não requer aposentadoria");
+		}
+	}
+}
