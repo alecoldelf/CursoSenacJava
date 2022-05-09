@@ -1,0 +1,22 @@
+package manzano;
+
+	import java.util.*;
+
+public class f {
+    public static void main(String[] args){
+       
+    	Scanner sc = new Scanner(System.in);
+    	
+    	System.out.println("Escolha um número qualquer :");
+    	float i = sc.nextInt();
+    	
+    	System.out.println("Escolha outr número");
+    	float l = sc.nextInt();
+    
+        double result = CalculatePower(i,l);
+        System.out.println(i+" elevado a "+l+" = "+result);
+    }
+    static double CalculatePower (float num, float pow){
+        return Math.pow(num,pow);
+    }
+}
