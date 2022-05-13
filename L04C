@@ -1,0 +1,21 @@
+package l04;
+
+	import java.util.*;
+
+public class C {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int x = 1;
+		
+		do {
+			if (x%4==0) {
+				System.out.println(x);
+				x++;
+			}
+		}
+		
+		while (x<=200);
+	}
+}
