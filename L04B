@@ -1,0 +1,22 @@
+package l04;
+
+	import java.util.*;
+
+public class B {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int i = 0;
+		
+		int l = 0;
+		
+		while (i<500) {
+			if (i%2==0) {
+				l+=i;
+			}
+			i++;
+		}
+		System.out.println(l);
+	}
+}
