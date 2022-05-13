@@ -1,0 +1,19 @@
+package l04;
+
+ import java.util.*;
+
+public class A {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int x = 15;
+		
+		do {
+			System.out.println(x);
+			Math.pow(x, 2);	
+		}
+		
+		while(x<200);
+	}
+}
