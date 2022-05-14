@@ -1,0 +1,41 @@
+package l04;
+
+	import java.util.*;
+
+public class E {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num = 0;
+		
+		int cont = 1;
+		
+		int soma = 0;
+		
+		do {
+			System.out.println("Digite um número: ");
+			num = sc.nextInt();
+			
+			long fat = 1;
+			
+			int contint = 0;
+			
+			do {
+				fat+=fat*contint;
+				contint++;
+			}
+			
+			while (contint<num);
+			
+			soma+=fat;
+			
+			System.out.println("O fatorial do seu número é: " +fat);
+			cont++;
+		}
+		
+		while (cont<=15);
+		
+		System.out.println("A soma dos fatoriais dos números é: " +soma);
+	}
+}
