@@ -1,0 +1,25 @@
+package l04;
+
+	import java.util.*;
+
+public class D {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		long cont = 1;
+		
+		long soma = 0;
+		
+		long quadro = 1;
+		
+		do {
+			System.out.println("No quadrado: " + cont + " temos " + quadro + " grãos ");
+			soma+=quadro;
+			quadro+=quadro;
+			cont++;
+		}
+		
+		while (cont<=64);
+	}
+}	
