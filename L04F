@@ -1,0 +1,31 @@
+package l04;
+
+	import java.util.*;
+
+public class F {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num = 0;
+		
+		int vezes = 0;
+		
+		int soma = 0;
+		
+		int somatotal = 0;
+		
+		do {
+			System.out.println("Digite um número: ");
+			num = sc.nextInt();
+			soma+=num;
+			vezes++;
+		}
+		
+		while (num>0);
+		
+		System.out.println("A soma total dos números é: " + soma);
+		System.out.println("A soma aritmética é: " + (soma/vezes));
+		System.out.println("O total de valores lidos foi de: " + vezes);
+	}
+}
