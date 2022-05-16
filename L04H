@@ -1,0 +1,40 @@
+package l04;
+
+	import java.util.*;
+
+public class H {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int x = 0;
+		
+		int y = 0;
+		
+		String a;
+		
+		do {
+			System.out.println("Deseja escolher um cômodo? Se sim, qual?");
+			a = sc.next();
+			
+			System.out.println("Qual a medida de um dos lados do cômodo?");
+			x = sc.nextInt();
+			
+			System.out.println("Qual a medida de outro dos lados do cômodo?");
+			y = sc.nextInt();
+			
+			int z = x*y;
+			
+			System.out.println("A área do cômodo: " + a + " é igual a: " + z);
+			
+			int b;
+			
+			z+=b;
+		}
+		
+		while (a!==nao);
+		
+		System.out.println("A área total da sua casa é de: " + b);
+	}
+}
