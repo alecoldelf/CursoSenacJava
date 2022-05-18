@@ -1,0 +1,21 @@
+package l05;
+
+	import java.util.Scanner;
+
+public class B
+{
+public static void main(String[] args) {
+	
+	Scanner sc = new Scanner (System.in);
+	
+	System.out.println("Digite um número: ");
+	int num = sc.nextInt();
+	
+	for (int cont = 1; cont <= 10; cont++) {
+	    int mult = num*cont;
+	    System.out.println(cont + "X" + num + " = " + mult);
+	}
+	
+	sc.close();
+}
+}
