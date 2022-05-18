@@ -1,0 +1,15 @@
+package l05;
+
+	import java.util.*;
+
+public class A {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		for (int x = 15; x<=200; x++){
+			
+			System.out.println("O quadrado do número " + x + " é " + (x*x));
+		}
+	}
+}
