@@ -1,0 +1,17 @@
+package l05;
+
+	import java.util.*;
+
+public class F {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		for(int x = 1; x<=200; x++) {
+			if (x%4==0) {
+				System.out.println(x);
+				x++;
+			}
+		}
+	}
+}
