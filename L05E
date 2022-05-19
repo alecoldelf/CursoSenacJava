@@ -1,0 +1,16 @@
+package l05;
+
+	import java.util.*;
+
+public class E {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		for (int x = 1; x<=20; x++) {
+			if (x%2==1) {
+				System.out.println(x);
+			}
+		}
+	}
+}
