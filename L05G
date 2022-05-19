@@ -1,0 +1,21 @@
+	package l05;
+	
+		import java.util.Scanner;
+	
+	public class G
+	{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		int num = 0;
+		
+		int exp = 3;
+		
+		for (int vez = 0; vez <= 15; vez++) {
+		    double total = Math.pow(exp, num);
+		    System.out.println(total);
+		    num++;
+		}
+	}
+	}
